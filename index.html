@@ -1,141 +1,209 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="'UFT-8">
-    <meta name="viewport" content="width-device-width" , initial-scale=" 1.0">
-    <link rel="stylesheet" href="webpage.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samra Meda - Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-    <title>SSMEDAA Profile</title>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
 </head>
 <body>
-  
-    <header>
-
-     
-        <div class="nav">
-            <a href="#"></a>
-            <nav class="main-nav">
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About </a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</span></a>
-
-                    </li>
-                    <li>
-                        <a href="#experince">Experince</span></a>
-                    </li>
-          
-
-
-                </ul>
-
-        </div>
-
-
-    </header>
-
-<section class="home-section" id="home">
-    <h1>Hi there, I am <mark>Samra</mark></h1>
-    <h2>I am an aspiring Software Engineer based in Toronto, Canada.</h2>
-    <div class="social-buttons">
-        <a href="https://www.linkedin.com/in/samra-adem/" title="LinkedIn" class="btn btn-linkedin btn-lg"><i class="fa fa-linkedin fa-fw"></i> in</a>
-    
-        <a href="mailto: samra12@my.yorku.ca" title="Gmail" class="btn btn-gmail btn-g"><i class="fa fa-gmail fa-fw"></i>g+ </a>
-        <a href="https://www.github.com/ssmedaa" title="Github" class="btn btn-github btn-github"><i class="fa-brands fa-github">github </i>
-        </a>
+  <!-- Navbar -->
+   <nav class="navbar">
+  <!-- Logo -->
+  <div class="logo-container">
+    <div class="logo">SA</div>
+    <div class="logo-details">
+      <div class="logo-name">Samra Adem</div>
+      <div class="logo-text">Computer Science</div>
     </div>
-</section>
+  </div>
 
+  <!-- Menu Links -->
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
+  <!-- Home Section -->
+  <section id="home">
+    <h1 >Hello, I'm Samra</h1>
+    <p>Computer Science Bachelor Graduate</p>
+  </section>
 
-<section class="aboutMe-section" id="about">
-    <h3>Who am I? </h3>
-        
-     
-    <p style="text-indent:5%;">     I am a Computer Science undergraduate at <mark>Lassonde School of Engineering, York University</mark> , with a strong drive and ambition.
-         My spare time is dedicated to creating unique and challenging programming projects, fueled by my passion for coding. 
-         Through my academic work and personal projects, I have honed my analytical and problem-solving skills, allowing me to overcome any obstacle that comes my way. 
-         As I near the completion of my degree, I am excited to put my skills and knowledge to use in a fulfilling and demanding role.</p>
-
-    <h4><mark> Technical Skills</mark></h4>
-        <ul>
-            <li>Front End: JavaScript, React, Next.js, HTML, CSS
-            </li>
-            <li>Back End:  Node.js, Python, Java, C, PostgreSQL, Neo4j, MongoDB, MySQL, Socket.io
-            </li>
-    
-        </ul>
-
-</section>
-
-<section class="projects-section" id="projects">
-    <h3>Projects 
-   
-</h3>
-  
-    <div id="proj">
-    <ul id="wrap">
-        <section class="psection">
-            <h4 style="text-align: right;"><mark>Spotify API Clone | Java, MongoDB, Neo4j </mark></h4>
-            <p style="text-indent:5%; text-align:left; margin-right: 30%;">Song and profile microservices run on a local host port with respected connected mongoDB and neo4j databases.
-                Application design allows users to register, follow/remove friends, create playlists, shuffle playlist and add/remove songs, and access to listen to song history.
-                </p>
-        <br>
-            <h4><mark>Six Degree of Separation: Kevin Bacon | Python </mark></h4>
-
-            <p style="text-indent:5%; text-align:left; margin-left: 20%; "> Developed a program game based on the the six degree of separation theory of for actor Kevin Bacon, to
-            demonstrate the theory that all individuals worldwide are linked through a series of acquaintances with a maximum
-            of six connections.Designed and implemented a Python program using IMDb data. The IMDbPY library searches for actors/actress,
-            and their films that connects to other actors by navigating through the degrees of separation between them and
-            Kevin Bacon. To effectively navigate the graph of actors and their collaborations, the program uses a breadth-first search (BFS)
-            algorithm.The program displays the outcome to the user after determining the path, indicating the degree of separation between the two players and showing the intermediary individuals participating in the chain of acquaintances.</p>
-           <br>
-            <h4 style="text-align: right;"><mark>Chat Application | Socket.io, JavaScript, HTML/CSS </mark></h4>
-            <p style="text-indent:5%; text-align:left; margin-right: 30%;">Developed a real-time chat application utilizing Socket.io, JavaScript, and HTML/CSS. Enabling seamless
-                communication with other users through a connection established on a localhost port.
-                Incorporated user information requirements such as username and room code prior to accessing the chat room. Ensured data security in the chat web application by implementing a message deletion feature. Developed a
-                mechanism to automatically delete messages once both users exit the room, thus safeguarding user privacy and maintaining data confidentiality.</p>
-        <br>
-                <h4><mark>University Database | Java, MySQL</mark></h4>
-        
-                <p style="text-indent:5%; text-align:left; margin-left: 40%;"> Database system for a university that stores university personal information (ie. university employees, and
-                    students).
-                     System allows alteration of information by only authorized individuals.</p>
-               <br>
-             
+  <!-- About Me Section -->
+  <section id="about">
+        <h2 class=" about-title">About Me</h2>
+        <p>I'm a passionate software engineer with experience in machine learning, full-stack web development, and data analysis. I love building projects that solve real-world problems and continuously exploring new technologies.</p>
+        <p>Outside coding, I enjoy exploring AI research, contributing to open-source projects, and learning new languages.</p>
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://github.com/ssmedaa" target="_blank" class="social-icon github">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/samra-adem" target="_blank" class="social-icon linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            
+        </div>  
+            <!-- Avatar Illustration -->
+        <div class="about-avatar">
+            <img src="images/girl (2).png" alt="Samra Avatar" />
+        </div>
     </section>
 
-     
-    </ul>
-   </div>
-</section>
-
-<section class="experience-section" id="experince">
-    <h3>Experience</h3>
-    <h4><mark> Software Developer Internship @ CHANCE</mark></h4>
-    <p style="font-size:smaller;    color:#d43752
-    ;">Jul. 2023 - Aug. 2023</p>
-    <p style="text-indent:5%;">  Enhanced the functionality by modifying the existing website by integrating Tailwind CSS and Next.js.
-        Contributed in implementing new applications that helped to increase the platform's effectiveness and usefulness.
-        </p>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project">
+        <div class="project-text">
+            <h3>EcoThreads</h3>
+            <p>Developed a full-stack sustainable clothing store using React, Node.js, and SQL with Stripe payment integration and an admin dashboard.</p>
+            <ul>
+                <li>Responsive design with WCAG 2.0 accessibility.</li>
+                <li>Secure payments via Stripe API.</li>
+                <li>Inventory and order management dashboard.</li>
+            </ul>
+            <div class="project-links">
+                <a href="#">🔗 View Code</a>
+            </div>
+        </div>
     
-    <h4><mark> JavaScript Instructor @ hEr VOLUTION</mark></h4>
-    <p style="font-size:smaller;    color:#d43752
-    ;">Jul. 2022 - Aug. 2023</p>
-    <p style="text-indent:5%;">  Through my role as a JavaScript Instructor, I had the privilege of empowering and inspiring BIPOC girls and gender non-conforming youth. 
-        By designing a comprehensive web development lesson plan, students achieved a profound comprehension of JavaScript, Bootstrap, and React, thus fostering diversity and inclusivity within the tech industry.
-         I provided students with the necessary skills in front-end and back-end web development, ensuring their proficiency in JavaScript, Bootstrap, and React. 
-         Moreover, the curriculum featured engaging exercises and real-world projects that facilitated a deeper understanding of these technologies.</p>
     
-</section>
+        <div class="project-img">
+            <img src="images/ecothreads.png" alt="EcoThreads Project Screenshot">
+        </div>
+    
+    </div>
 
+    <div class="project" class="projects-section">
+        <div class="project-text">
+            <h3>InsightFlow</h3>
+            <p>Interactive analytics platform built with JavaScript, Chart.js, and Node.js to visualize business metrics and drive data-based decisions.</p>
+            <ul>
+                <li>Dynamic filtering and data export features.</li>
+                <li>Optimized performance with caching and async rendering.</li>
+            </ul>
+            <div class="project-links">
+                <a href="#">🔗 View Code</a>
+            </div>
+        </div>
+        <div class="project-img">
+            <img src="images/InsightFlow.png" alt="InsightFlow Project Screenshot" >
+        </div>
+    </div>
+
+ 
+    <div class="project" class="projects-section">
+        <div class="project-text">
+            <h3>AI Fraud Detection</h3>
+                <p>Machine learning system designed to detect fraudulent transactions using real-world datasets and predictive models.</p>
+            <ul>
+                <li>Analyzed transaction data for anomaly detection.</li>
+                <li>Applied classification models for accurate fraud prediction.</li>
+                <li>Enhanced compliance through automated KYC screening.</li>
+            </ul>
+            <div class="project-links">
+                <a href="#">🔗 View Code</a>
+            </div>
+        </div>
+        <div class="project-img">
+            <img src="images/AI-Fraud Detection.png" alt="AI Fraud Detection Project Screenshot">
+        </div>
+    </div>
+
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="skills-title">Technical Skills</h2>
+    <canvas id="skillsRadar"></canvas>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to reach out via email.</p>
+    <form id ="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p id="form-status"></p>
+    </form>
+  </section>
+
+  <!-- JavaScript for Radar Chart -->
+  <script>
+    const ctx = document.getElementById('skillsRadar').getContext('2d');
+    const skillsRadar = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Python', 'SQL', 'Java', 'JavaScript', 'React', 'Machine Learning', 'Data Analysis', 'Web Development'],
+            datasets: [{
+                label: 'Skill Proficiency',
+                data: [90, 85, 75, 80, 70, 95, 91, 90],
+                backgroundColor: 'rgba(255, 0, 0, 0.2)',   // light red fill
+                borderColor: '#FF0000',  
+                borderWidth: 2,
+                pointBackgroundColor: '#FF0000',
+                pointHoverBorderColor: '#FF0000',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#007BFF'
+            }]
+        },
+        options: {
+            scales: {
+                r: {
+                    angleLines: { display: true },
+                    suggestedMin: 0,
+                    suggestedMax: 100,
+                    ticks: { stepSize: 20, backdropColor: 'transparent' }
+                }
+            },
+            plugins: { legend: { display: false }, tooltip: { enabled: true } },
+            responsive: true,
+            maintainAspectRatio: false
+        }
+    });
+
+
+    // EmailJS Contact Form Integration
+
+(function() {
+  emailjs.init(aUdbadLW7HZ1IjPNL); 
+})();
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm(service_ssg30tq, template_pesq6fc, this)
+    .then(() => {
+      status.textContent = "✅ Message sent successfully!";
+      form.reset();
+    })
+    .catch((error) => {
+      console.error(error);
+      status.textContent = "❌ Oops! Something went wrong.";
+    });
+});
+  </script>
 
 </body>
-
 </html>
