@@ -1,5 +1,9 @@
 # Personal Website 
 Hello! 👋
 
-This is my new personal website to allow anyone to know who SSMEDAA is. This personal webite may be very simple as it was programmed using HTML and CSS, but I wanted to create a website that is simple, and neat that gets to the point and isn't considered 'too much' by the user viewing it. I hosted my personal website using VERCEL, and there is a link to the deployed website in the /about section.
+This is my personal portfolio website, showcasing my skills, projects, and contact information. Built with HTML, CSS, and JavaScript, it highlights my work in web development, data visualization, and machine learning.
 
+
+## Deployment
+  - Hosted on Vercel for fast and reliable deployment
+  - Node.js version 22.x required for builds
